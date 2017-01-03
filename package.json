@@ -2,7 +2,7 @@
   "name": "node_learn_blog",
   "version": "1.0.0",
   "description": "my blog learn",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hahaxixi/nodejs_learn#readme",
   "dependencies": {
+    "ejs": "^2.5.5",
     "express": "^4.14.0"
   }
 }
