@@ -1,0 +1,26 @@
+{
+  "name": "node_learn_blog",
+  "version": "1.0.0",
+  "description": "my blog learn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hahaxixi/nodejs_learn.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog"
+  ],
+  "author": "zxd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hahaxixi/nodejs_learn/issues"
+  },
+  "homepage": "https://github.com/hahaxixi/nodejs_learn#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
