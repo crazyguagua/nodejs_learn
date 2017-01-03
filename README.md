@@ -1,3 +1,4 @@
+#github地址 git@github.com:hahaxixi/nodejs_learn.git
 ##安装依赖
 1. express cnpm i express@4.14.0 --save
 2. cnpm install -g supervisor   在开发过程中，每次修改代码保存后，我们都需要手动重启程序，才能查看改动的效果。使用 supervisor 可以解决这个繁琐的问题，全局安装 supervisor：运行 supervisor --harmony index 启动程序
@@ -17,19 +18,17 @@
 	<%- code %>：显示原始 HTML 内容
 3   中间件
 	express 中的中间件（middleware）就是用来处理请求的，当一个中间件处理完，可以通过调用 next() 传递给下一个中间件，如果没有调用 next()，则请求不会往下传递，如内置的 res.render 其实就是渲染完 html 直接返回给客户端，没有调用 next()，从而没有传递给下一个中间件。看个小例子，修改 index.js 如下：
-	{ {{ 
-		var express = require('express');
-		var app = express();
+			var express = require('express');
+			var app = express();
 
-		app.use(function(req, res, next) {
-		  console.log('1');
-		  next(new Error('haha'));
-		});
+			app.use(function(req, res, next) {
+			  console.log('1');
+			  next(new Error('haha'));
+			});
 
-		app.use(function(req, res, next) {
-		  console.log('2');
-		  res.status(200).end();
-		});
+			app.use(function(req, res, next) {
+			  console.log('2');
+			  res.status(200).end();
+			});
 
-		app.listen(3000);
-	}} }
+			app.listen(3000);
