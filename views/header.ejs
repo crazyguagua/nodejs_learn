@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      body {padding: 50px;font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;}
-    </style>
+  	<meta charset="utf-8">
+  	   <title><%= blog.title %></title>
+  	   <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+   <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
+       <link rel="stylesheet" href="/css/style.css">
+       <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+       <script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
   </head>
   <body>
+  	<%- include('include/nav') %>
+  	 <%- include('include/nav-setting') %>
+  	 <%- include('include/notification') %>

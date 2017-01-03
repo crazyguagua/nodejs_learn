@@ -1,7 +1,7 @@
 {
-  "name": "node_learn_blog",
+  "name": "zxd的小窝",
   "version": "1.0.0",
-  "description": "my blog learn",
+  "description": "我的个人博客",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +21,24 @@
   },
   "homepage": "https://github.com/hahaxixi/nodejs_learn#readme",
   "dependencies": {
+    "config-lite": "^1.5.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
     "ejs": "^2.5.5",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.14.2",
+    "express-winston": "^2.1.2",
+    "marked": "^0.3.6",
+    "moment": "^2.17.1",
+    "mongolass": "2.4.1",
+    "objectid-to-timestamp": "^1.3.0",
+    "sha1": "^1.1.1",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.5",
+    "mocha": "3.1.2",
+    "supertest": "2.0.1"
   }
 }
